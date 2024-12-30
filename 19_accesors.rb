@@ -1,34 +1,14 @@
 class Book
-
+  
   def initialize(title, ed, pags) 
     @title = title
     @ed = ed
     @pags = pags
   end
 
-  def title
-    @title
-  end
-
-  def title=(t)
-    @title = t
-  end
-
-  def editorial
-    @editorial
-  end
-
-  def editorial=(e)
-    @editorial = e
-  end
-
-  def pags
-    @pags
-  end
-
-  def pags=(p)
-    @pags = p
-  end
+  # attr_reader # es un getter
+  # attr_writer # es un setter
+  attr_accessor :title, :ed, :pags # es getter y setter
   
 end
 
